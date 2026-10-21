@@ -7,7 +7,6 @@ Hiçbir şey yapmaz. Ama çok ciddiyetle yapmaz.
 
 import time
 import random
-import base64
 
 beklemeler = [
     "Hala bekliyorum...",
@@ -19,12 +18,9 @@ beklemeler = [
 ]
 
 def gizli_mesaj():
-    # Gizli şey burada. Saklı.
-    kod = "QWxsYWggY2V2YXAgZXRzaW4u"  # base64, çözersen anlarsın ama anlama.
-    try:
-        return base64.b64decode(kod).decode('utf-8')
-    except:
-        return "Gizli kaldı."
+    # Gizli şey burada. Çok saklı. Tersine çevirip oku ama okuma.
+    kod = "royukeb alah igidnas mices"
+    return kod[::-1]
 
 def sonsuz_bekle():
     print("Program başlatıldı. Şimdi sonsuza kadar bekleyeceğiz.")
